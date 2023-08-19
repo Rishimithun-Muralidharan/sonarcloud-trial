@@ -35,7 +35,7 @@ jobs:
       #  run: cd 'android'
 
       - name: Build and analyze
-        env:
-          #GITHUB_TOKEN: 2c9ec59112c48f1d1ed6086caa8d169d0718c669# Needed to get PR information, if any
-          SONAR_TOKEN: 2c9ec59112c48f1d1ed6086caa8d169d0718c669
+        #env:
+        #GITHUB_TOKEN: 2c9ec59112c48f1d1ed6086caa8d169d0718c669# Needed to get PR information, if any
+        #SONAR_TOKEN: 2c9ec59112c48f1d1ed6086caa8d169d0718c669
         run: ./gradlew build sonar --info
