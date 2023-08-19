@@ -32,7 +32,7 @@ jobs:
           restore-keys: ${{ runner.os }}-gradle
 
       - name: Change directory to 'android'
-        run: cd android
+        run: cd 'android'
 
       - name: Build and analyze
         env:
