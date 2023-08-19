@@ -31,8 +31,8 @@ jobs:
           key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle') }}
           restore-keys: ${{ runner.os }}-gradle
 
-      # - name: Change directory to 'android'
-      #   run: cd 'android'
+      - name: Change directory to 'android'
+        run: cd 'android'
 
       - name: Build and analyze
         env:
