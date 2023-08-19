@@ -47,10 +47,11 @@ android {
     defaultConfig {
         sonar{
             properties{
-                property 'sonar.host.url', 'https://sonarcloud.io'
-                property 'sonar.token', '2c9ec59112c48f1d1ed6086caa8d169d0718c669'
+                
+                property 'sonar.token', '395571f1f6db9241a8686bac52b2ddb09e2d68ca'
                 property 'sonar.projectKey', 'rishi-test_trial-flutter-app'
                 property 'sonar.organization', 'rishi-test'
+                property 'sonar.host.url', 'https://sonarcloud.io'
             }
         }
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
