@@ -33,11 +33,11 @@ jobs:
 
       #- name: Change directory to 'android'
       #  run: cd 'android'
-      - name: Make gradlew executable
-        run: chmod +x /android/./gradlew
+      #- name: Make gradlew executable
+      #  run: chmod +x /android/./gradlew
 
       - name: Build and analyze
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        run: ./gradlew sonar build --info
+        run: ~/./gradlew sonar build --info
