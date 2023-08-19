@@ -34,7 +34,7 @@ jobs:
       #- name: Change directory to 'android'
       #  run: cd 'android'
       - name: Make gradlew executable
-        run: chmod +x ./gradlew
+        run: chmod +x android/./gradlew
 
       - name: Build and analyze
         env:
