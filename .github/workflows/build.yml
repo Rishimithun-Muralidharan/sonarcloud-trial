@@ -31,11 +31,11 @@ jobs:
           key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle') }}
           restore-keys: ${{ runner.os }}-gradle
 
-      - name: Change directory to 'android'
-        run: cd 'android'
+      #- name: Change directory to 'android'
+      #  run: cd 'android'
 
       - name: Build and analyze
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Needed to get PR information, if any
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.2c9ec59112c48f1d1ed6086caa8d169d0718c669 }} # Needed to get PR information, if any
+          SONAR_TOKEN: ${{ secrets.2c9ec59112c48f1d1ed6086caa8d169d0718c669 }}
         run: android/./gradlew build sonar --info

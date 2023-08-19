@@ -48,9 +48,9 @@ android {
         sonar{
             properties{
                 property 'sonar.host.url', 'https://sonarcloud.io'
-                property 'sonar.token', 'f02e3ac0f4bf4fabf5b44b9dc0e09940616e0a57'
-                property 'sonar.projectKey', 'rishimithun-testing_flutter-trial-app'
-                property 'sonar.organization', 'rishimithun-testing'
+                property 'sonar.token', '2c9ec59112c48f1d1ed6086caa8d169d0718c669'
+                property 'sonar.projectKey', 'rishi-test_trial-flutter-app'
+                property 'sonar.organization', 'rishi-test'
             }
         }
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
